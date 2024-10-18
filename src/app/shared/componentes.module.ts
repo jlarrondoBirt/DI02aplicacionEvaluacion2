@@ -1,12 +1,16 @@
+import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-
+import { HeaderTabComponent } from './header-tab/header-tab.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [HeaderTabComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    IonicModule
+  ],
+  exports: [
+    HeaderTabComponent,
   ]
 })
 export class ComponentesModule { }
