@@ -15,9 +15,12 @@
 
     <!--Se muestra el mensaje en rojo o en verde, segun se ha adivinado el numero o no -->
     <ion-item>
+      <ion-label color="primary" mode="ios">Número de intentos: {{intentos}}</ion-label>
+    </ion-item>
+    <ion-item>
       <ion-label *ngIf="!acierto" color="danger">{{mensaje}}</ion-label>
       <ion-label *ngIf="acierto" color="success">{{mensaje}}</ion-label>
-      <ion-badge color="primary" mode="ios">{{intentos}}</ion-badge>
     </ion-item>
   </ion-list>
+  <ion-button (click)="presentarAlerta()">¿Quieres volver a jugar?</ion-button>
   </ion-content>
