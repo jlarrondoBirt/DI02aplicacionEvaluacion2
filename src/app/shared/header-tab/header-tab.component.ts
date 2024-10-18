@@ -9,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class HeaderTabComponent  implements OnInit {
 
   @Input() titulo: string = "";
-  
+
   constructor() { }
 
   ngOnInit() {}
